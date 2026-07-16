@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Theory Dojang — Sophia Eaves</title>
+    <meta
+      name="description"
+      content="Theory Dojang — project by Sophia Eaves."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="logo" href="../index.html">Sophia Eaves</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="section project-detail">
+      <p class="back-link"><a href="../index.html#work">← Back to projects</a></p>
+
+      <!-- Intro -->
+      <header class="project-detail__header">
+        <p class="project-card__meta">Solo · Web App · 2022</p>
+        <h1>Theory Dojang</h1>
+        <p class="project-detail__lede">
+          Theory Dojang is a website I developed as part of my computer science A-Level. Users of the website can create accounts, after which their information is stored in a database. They can then use an SRS system to study Taekwondo theory with flashcards. The user's progress is tracked, and they are tested with set flashcards each day depending on how well they remembered the flashcards from previous days.
+        </p>
+      </header>
+
+      <figure>
+            <video
+              controls
+              playsinline
+              poster="../assets/projects/theory-dojang/shot-01.jpg"
+            >
+              <source
+                src="../assets/projects/theory-dojang/flashcard-video.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Flashcards</figcaption>
+          </figure>
+
+      <figure>
+            <video
+              controls
+              playsinline
+              poster="../assets/projects/theory-dojang/shot-02.jpg"
+            >
+              <source
+                src="../assets/projects/theory-dojang/questions-video.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Multiple-choice questions</figcaption>
+          </figure>
+
+      <!-- Process -->
+      <section aria-labelledby="process-heading">
+        <h2 id="process-heading">Development</h2>
+        <p>
+            Theory Dojang was a full-stack project with a JavaScript frontend and a Python backend, using a MySQL
+            database for data storage. The web framework I chose to use was Flask.
+        </p>
+        <p>
+            This project was my first attempt at a full-stack web app and my first introduction to JavaScript and Flask.
+            I was able to develop both my frontend programming ability and my knowledge of how to structure and create a
+            web app from scratch.
+        </p>
+        <p>
+            As part of this project, I went through a thorough design process, first collecting user requirements,
+            then modelling data and program flow, specific algorithms, data structures, the database design, and more.
+            I have selected the system flowchart, entity-relationship diagram and class diagram to show below.
+        </p>
+        <img
+            src="../assets/projects/theory-dojang/diagrams.jpg"
+            alt="Screenshot of the diagrams"
+            width="744"
+            height="664"
+      />
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Sophia Eaves</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

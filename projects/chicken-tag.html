@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chicken Tag — Sophia Eaves</title>
+    <meta
+      name="description"
+      content="Chicken Tag — game project by Sophia Eaves."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="logo" href="../index.html">Sophia Eaves</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="section project-detail">
+      <p class="back-link"><a href="../index.html#work">← Back to projects</a></p>
+
+      <!-- Intro -->
+      <header class="project-detail__header">
+        <p class="project-card__meta">Solo · Unity · 2024</p>
+        <h1>Chicken Tag</h1>
+        <p class="project-detail__lede">
+          Chicken Tag lets you live out your lifelong dreams of being a chicken and playing tag with your chicken friends.
+          This was my first Unity project outside of following and adapting tutorials, and I developed it over seven days during my
+          work experience at Fruity Systems Ltd.
+        </p>
+        <p class="project-links">
+          <a
+            href="https://sophia990.itch.io/chicken-tag"
+            target = "_blank"
+            rel="noopener noreferrer"
+            >Play on itch.io</a
+          >
+          <!--
+          <span aria-hidden="true"> · </span>
+          <a
+            href="https://github.com/Sophia990/little-red-riding-hood"
+            rel="noopener noreferrer"
+            >View on GitHub</a
+          >
+          -->
+        </p>
+      </header>
+
+      <figure>
+            <video
+              controls
+              playsinline
+              poster="../assets/projects/chicken-tag/shot-01.jpg"
+            >
+              <source
+                src="../assets/projects/chicken-tag/trailer.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Gameplay trailer</figcaption>
+          </figure>
+
+      <!-- Process -->
+      <section aria-labelledby="process-heading">
+        <h2 id="process-heading">Development</h2>
+        <p>
+            Some of the skills I learnt, outside of developing my knowledge of Unity and C# in general, include how to use and control UI elements, such as buttons; I created a main menu for my game, using a script to control the functions of the buttons and a scriptable object to control their colours. 
+        </p>
+        <p>
+            In addition to this, I learnt about AI navigation in Unity, which I used to help control the movement of the NPCs. I used the rigidbody and box collider components to detect collisions, and another script to control what happens when a collision is detected.
+        </p>
+        <p>
+            I also learnt how to create prefabs, as I made an NPC prefab in order to be able to make multiple NPCs easily without having to repeat changes I make to one on all of them. 
+        </p>
+        <p>
+            Another skill I developed was debugging, using Debug.Log in scripts, and by creating a specific debugger script, in which I used gizmos to show if a chicken was it and if a chicken was frozen in place.
+        </p>
+        <p>
+            Although I was given the project of making a game of tag, I made various design choices within the game. I chose to use chickens as characters for aesthetic purposes, and used a different coloured chicken for the player so that they can be easily differentiated from the NPCs. I also wanted the chicken who is it to be easy to spot, so I added a blue circle underneath them, which is simple and unobtrusive, but easy enough to understand.
+        </p>
+        <p>
+            Another choice that I made was to not have the directional light directly above the scene, but as an angle, as having some shadows makes the scene more interesting visually. With regards to game mechanics, I made chickens that are it slower than those that aren’t to make it harder to tag another chicken, as well as making the player slower that NPCs at all times, to make the game a little harder. I also chose to have 6 NPCs, as I wanted to include a group of them, but not too many, as the more NPCs there were, the easier the game became, since the NPCs would just chase each other rather than the player.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Sophia Eaves</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
