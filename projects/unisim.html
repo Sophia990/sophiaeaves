@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UniSim — Sophia Eaves</title>
+    <meta
+      name="description"
+      content="UniSim — game project"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="logo" href="../index.html">Sophia Eaves</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="section project-detail">
+      <p class="back-link"><a href="../index.html#work">← Back to projects</a></p>
+
+      <!-- Intro -->
+      <header class="project-detail__header">
+        <p class="project-card__meta">Group Project · Java · 2024</p>
+        <h1>UniSim</h1>
+        <p class="project-detail__lede">
+          UniSim is a group project I worked on in my second year of university for my Engineering I module.
+          The project involved creating a short 2D game to build a university campus, with the aim to achieve
+          maximum student satifisfaction within time constraints and subject to random events.
+        </p>
+      </header>
+
+      <img
+            src="../assets/projects/unisim/unisim.jpg"
+            alt="Screenshot of the diagrams"
+            width="696"
+            height="430"
+      />
+
+      <!-- Process -->
+      <section aria-labelledby="process-heading">
+        <h2 id="process-heading">My Contributions</h2>
+        <p>
+            My contributions to this project included creating architecture diagrams and creating diagrams and 
+            documents to organise the team's time and progress in the first half. In the second half of the project,
+            I was involved in testing, creating a thorough plan for manual testing of the game and writing unit tests
+            for Java.
+        </p>
+        <p>
+            Through this, I feel that I was able to learn about project management and more about designing the 
+            architecture for a game. Mostly, this was the first time I had ensured that a project was thoroughly
+            tested, with both unit tests and the manual test plan that I wrote. Documents detailing the architecture
+            diagrams (of which I made the state diagrams and class diagrams), manual testing plan and unit test results
+            can be found below.
+        </p>
+        <div class="hero__actions">
+            <a class="btn btn--primary" href="../assets/projects/unisim/architecture-diagrams.pdf" target="_blank" download>Architecture Diagrams</a>
+            <a class="btn btn--primary" href="../assets/projects/unisim/manual-tests.pdf" target="_blank" download>Manual Testing Plan</a>
+            <a class="btn btn--primary" href="../assets/projects/unisim/testSummary/index.html" target="_blank" download>Unit Test Results</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Sophia Eaves</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

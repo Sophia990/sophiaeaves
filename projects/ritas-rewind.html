@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mighty Morphin Power Rangers: Rita's Rewind — Sophia Eaves</title>
+    <meta
+      name="description"
+      content="Mighty Morphin Power Rangers: Rita's Rewind"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="logo" href="../index.html">Sophia Eaves</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="section project-detail">
+      <p class="back-link"><a href="../index.html#work">← Back to projects</a></p>
+
+      <!-- Intro -->
+      <header class="project-detail__header">
+        <p class="project-card__meta">Released Title · 2024</p>
+        <h1>Mighty Morphin Power Rangers: Rita's Rewind</h1>
+        <p class="project-detail__lede">
+          Mighty Morphin Power Rangers: Rita's Rewind is a 2D brawler with an original Power Rangers storyline, 
+          which I worked on during my internship at Digital Eclipse. I developed a level for the game, using Lua
+          and C++, and was given the opportunity to contribute ideas and suggestions.
+        </p>
+        <p class="project-links">
+          <a
+            href="https://www.digitaleclipse.com/games/mmpr"
+            target = "_blank"
+            rel="noopener noreferrer"
+            >See more</a
+          >
+          <!--
+          <span aria-hidden="true"> · </span>
+          <a
+            href="https://github.com/Sophia990/little-red-riding-hood"
+            rel="noopener noreferrer"
+            >View on GitHub</a
+          >
+          -->
+        </p>
+      </header>
+
+      <!--
+      <figure>
+            <video
+              controls
+              playsinline
+              poster="../assets/projects/little-red-riding-hood/shot-01.jpg"
+            >
+              <source
+                src="../assets/projects/little-red-riding-hood/trailer.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Gameplay trailer</figcaption>
+          </figure>
+        -->
+
+      <!-- Process -->
+      <section aria-labelledby="process-heading">
+        <h2 id="process-heading">My Contributions</h2>
+        <p>
+            Although my level has been reworked somewhat since the end of my internship, I helped to develop it
+            from being just a road with coins, to having enemies, obstacles, and an environment around it.
+        </p>
+        <p>
+            I made choices about where to introduce the enemies and obstacles, added the buildings and trees,
+            and ensured that no more buildings, trees or road than aboslutely necessary were present to optimise
+            the level.
+        </p>
+        <p>
+            To introduce these elements to the level, I used the scripting language Lua, which was the first time I
+            had used only a scripting language like this to add objects to a game. I quickly realised that I should be
+            using constants and adding to the previous object's constant to decide distances between objects, to
+            save needing to fiddle with lots of numbers.
+        </p>
+        <p>
+            Moreover, I used C++ to change the behaviour of various enemies and obstacles, and to create a new obstacle,
+            although these additions did not make it into the final game. This was my first experience of C++ code used
+            in a professional game, and I was able to develop my knowledge of some programming concepts used in C++,
+            such as bitwise operations.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Sophia Eaves</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

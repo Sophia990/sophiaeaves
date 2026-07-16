@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Little Red Riding Hood — Sophia Eaves</title>
+    <meta
+      name="description"
+      content="Little Red Riding Hood — game project by Sophia Eaves."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="logo" href="../index.html">Sophia Eaves</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="section project-detail">
+      <p class="back-link"><a href="../index.html#work">← Back to projects</a></p>
+
+      <!-- Intro -->
+      <header class="project-detail__header">
+        <p class="project-card__meta">Solo · Unity · 2024</p>
+        <h1>Little Red Riding Hood</h1>
+        <p class="project-detail__lede">
+          Little Red Riding Hood is a 2D platformer retelling the classic fairytale with a slight twist at the end.
+          Fight frightful creatures and navigate treacherous terrain in the woods as you attempt to deliver a care package
+          of cake and wine to your grandmother. Little do you know, you're in for a big shock when you finally arrive
+          at her house...
+        </p>
+        <p class="project-links">
+          <a
+            href="https://sophia990.itch.io/little-red-riding-hood"
+            target = "_blank"
+            rel="noopener noreferrer"
+            >Play on itch.io</a
+          >
+          <!--
+          <span aria-hidden="true"> · </span>
+          <a
+            href="https://github.com/Sophia990/little-red-riding-hood"
+            rel="noopener noreferrer"
+            >View on GitHub</a
+          >
+          -->
+        </p>
+      </header>
+
+      <figure>
+            <video
+              controls
+              playsinline
+              poster="../assets/projects/little-red-riding-hood/shot-01.jpg"
+            >
+              <source
+                src="../assets/projects/little-red-riding-hood/trailer.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Gameplay trailer</figcaption>
+          </figure>
+
+      <!-- Process -->
+      <section aria-labelledby="process-heading">
+        <h2 id="process-heading">Development</h2>
+        <p>
+          I acquired various new skills over the course of creating this game, such as using Unity Events to cause code to run in one script when something happens in a different script, and coroutines, for time delays in particular.
+        </p>
+        <p>
+          This was also my first Unity project in 2D, which came with many new opportunities to learn. Something I used for the first time was tilemaps, to draw the ground for the player.
+        </p>
+        <p>
+          However, by far the largest challenge was creating cutscenes. I used Unity timeline to animate characters, and trigger dialogue and scene changes.   
+        </p>
+        <p>
+            In this project, I wanted there to be a few different types of enemies, as well as different ways to interact with the map and environments. I also, however, did not want to overwhelm the player from the beginning, so I made the choice to introduce some enemies - the bats and flowers that attack - in later levels only. Additionally, I kept the map relatively simple in the first levels, then included more complex environmental features in the later levels. 
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Sophia Eaves</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
