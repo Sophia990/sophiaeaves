@@ -123,22 +123,20 @@ a:hover {
     align-items: center;
     padding: clamp(3rem, 10vh, 5.5rem) var(--pad);
     overflow: hidden;
-    color: var(--paper);
-    background: var(--ink);
+    color: #f4f1ea;
+    background: #9c5781;
 }
 
 .hero__atmosphere {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background:
-            linear-gradient(0deg, rgba(20, 36, 28, 0.75) 0%, rgba(20, 36, 28, 0.4) 50%, rgba(20, 36, 28, 0.55) 100%),
-            repeating-linear-gradient(90deg, transparent 0, transparent 47px, rgba(246, 243, 236, 0.04) 47px, rgba(246, 243, 236, 0.04) 48px),
-            repeating-linear-gradient(0deg, transparent 0, transparent 47px, rgba(246, 243, 236, 0.04) 47px, rgba(246, 243, 236, 0.04) 48px),
-            radial-gradient(circle at 70% 35%, #2a4a38 0%, transparent 42%),
-            radial-gradient(circle at 20% 70%, rgba(196, 92, 38, 0.35) 0%, transparent 38%),
-            linear-gradient(135deg, #1a3026, #0f1a15 55%, #24352c);
-    animation: atmosphere-drift 18s ease-in-out infinite alternate;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 65% 50% at 85% 10%, #b56f98 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 10% 90%, #7a4064 0%, transparent 50%),
+    radial-gradient(ellipse 35% 30% at 45% 55%, rgba(244, 241, 234, 0.08) 0%, transparent 55%),
+    linear-gradient(155deg, #a8638c 0%, #8a4a70 55%, #9c5781 100%);
+  animation: atmosphere-drift 18s ease-in-out infinite alternate;
 }
 
 @keyframes atmosphere-drift {
@@ -194,7 +192,7 @@ a:hover {
     margin: 0 0 1.25rem;
     max-width: 32rem;
     font-size: clamp(1.05rem, 2vw, 1.2rem);
-    color: rgba(246, 243, 236, 0.82);
+    color: rgba(244, 241, 234, 0.78);
 }
 
 .hero__focus {
@@ -203,7 +201,7 @@ a:hover {
     padding: 0;
     display: grid;
     gap: 0.35rem;
-    color: rgba(246, 243, 236, 0.68);
+    color: rgba(244, 241, 234, 0.78);
     font-size: 0.95rem;
 }
 
@@ -242,13 +240,13 @@ a:hover {
 }
 
 .btn--ghost {
-    border: 1px solid rgba(246, 243, 236, 0.45);
-    color: var(--paper);
+  border: 1px solid rgba(244, 241, 234, 0.5);
+  color: #f4f1ea;
 }
 
 .btn--ghost:hover {
-    border-color: var(--paper);
-    color: var(--paper);
+  border-color: #f4f1ea;
+  color: #f4f1ea;
 }
 
 .section {
