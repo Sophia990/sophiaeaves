@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manicure Gala — Sophia Eaves</title>
+    <meta
+      name="description"
+      content="Manicure Gala"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="logo" href="../index.html">Sophia Eaves</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#education">Education</a>
+        <a href="../index.html#courses">Certifications</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="section project-detail">
+      <p class="back-link"><a href="../index.html#work">← Back to projects</a></p>
+
+      <!-- Intro -->
+      <header class="project-detail__header">
+        <p class="project-card__meta">Prototype · Unity · 2026</p>
+        <h1>Manicure Gala</h1>
+        <p class="project-detail__lede">
+          Manicure Gala is a web-based nail painting game, aimed at young children, which I am currently developing in association with Dream Reality Interactive, and plan to release on Poki. The video below shows a prototype version of the game.
+        </p>
+        <p class="project-links">
+        </p>
+      </header>
+
+      <figure>
+        <div class="webgl-frame">
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/ysHrNWAV_bE?si=XSKZ60BmfWDCopS_?rel=0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+          </div>
+            <figcaption>Prototype playthrough</figcaption>
+          </figure>
+
+      <!-- Process -->
+      <section aria-labelledby="process-heading">
+        <h2 id="process-heading">Development</h2>
+        <p>
+            In Manicure Gala, you can decorate a set of nails at a nail salon, using nail polishes and a selection of acrylic patterns and gems. The colours of the polishes can be changed and you are able to use a fill tool. You are also able to focus on individual nails and clear your designs.
+        </p>
+        <p>
+            Additionally, there is a multiplayer mode, which is currently mocked in the prototype, in which you compete against other players to make a nail design in two minutes, and everyone votes for their favourite design at the end.
+        </p>
+        <p>
+            I am developing this game in Unity 6, and have needed to carefully consider various aspects of the design and implementation, particularly with regards to the user interface. I decided that it would be most intuitive to select a polish bottle and drag on the nail to paint, to drag and drop for the gems, and to select and click to place an acrylic pattern.
+        </p>
+        <p>
+            Moreover, the game subtly shows the player which polish or acrylic is selected by making the icon slightly bigger. Holding a different polish bottle to change its colour will also automatically select that polish bottle, as I felt this was what the player would most likely expect to happen.
+        </p>
+        <p>
+            I also considered how the UI would need to adapt to different screen sizes, including a mobile screen. The game therefore displays only one hand at a time if the screen height is greater than the screen width. In addition to this, I enlarged all UI buttons so that they could be pressed easily with a finger on a small touchscreen.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Sophia Eaves</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
